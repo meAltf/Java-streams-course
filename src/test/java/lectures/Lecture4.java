@@ -27,5 +27,10 @@ public class Lecture4 {
   public void distinctWithSet() throws Exception {
     final List<Integer> numbers = ImmutableList.of(1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 9, 9, 9);
 
+    Set<Integer> distinctNumbers = numbers.stream()
+            .collect(Collectors.toSet());
+
+    assertThat(distinctNumbers).hasSize(9);
+    System.out.println(distinctNumbers);
   }
 }
