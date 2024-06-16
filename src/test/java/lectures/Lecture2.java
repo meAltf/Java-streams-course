@@ -29,6 +29,12 @@ public class Lecture2 {
   public void rangeIteratingLists() throws Exception {
     List<Person> people = MockData.getPeople();
 
+    // use IntStream, if you want you iterate based on index..
+    IntStream.range(0, people.size())
+            .forEach(index -> {
+              Person person = people.get(index);
+              System.out.println(person);
+            });
   }
 
   @Test
