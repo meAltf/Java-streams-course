@@ -39,9 +39,9 @@ public class Lecture2 {
 
   @Test
   public void intStreamIterate() throws Exception {
-      IntStream.iterate(0, operand -> operand + 1)
-          .filter(number -> number % 2 == 0)
-          .limit(20)
-          .forEach(System.out::println);
+    IntStream.iterate(1, operand -> operand + 1)
+            .filter(number -> number % 5 == 0)// you can use any name instead of using operand..
+            .limit(20)
+            .forEach(System.out::println);
   }
 }
