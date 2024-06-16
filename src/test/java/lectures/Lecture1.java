@@ -16,6 +16,10 @@ import org.junit.Test;
 
 public class Lecture1 {
 
+  /**
+   * Start from here.. functional prog with Java 8
+   */
+
   @Test
   public void imperativeApproach() throws IOException {
     List<Person> people = MockData.getPeople();
