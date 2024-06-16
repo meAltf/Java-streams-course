@@ -10,7 +10,19 @@ public class Lecture2 {
 
   @Test
   public void range() throws Exception {
+    for(int i=0; i<=10; i++){
+      System.out.println(i);
+    }
 
+    System.out.println("stream below- exclusive");
+
+    IntStream.range(0,10).forEach(index -> System.out.println(index)); // 0 inclusive 10 exclusive
+    //2nd way
+    IntStream.range(0,10).forEach(System.out::println);
+
+    System.out.println("stream below- inclusive");
+
+    IntStream.rangeClosed(0,10).forEach(System.out::println);
   }
 
   @Test
