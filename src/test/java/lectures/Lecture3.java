@@ -14,7 +14,8 @@ public class Lecture3 {
     final List<Integer> numbers = ImmutableList.of(1, 2, 3, 100, 23, 93, 99);
 
     Integer min = numbers.stream()
-            .min((number1, number2) -> number1 > number2 ? 1 : -1)
+            //.min((number1, number2) -> number1 > number2 ? 1 : -1)
+            .min(Comparator.naturalOrder())
             .get();
     assertThat(min).isEqualTo(1);
     System.out.println(min);
