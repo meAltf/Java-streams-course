@@ -16,6 +16,11 @@ public class Lecture7 {
 
   @Test
   public void count() throws Exception {
+    long countFemale = MockData.getPeople()
+            .stream()
+            .filter(person -> person.getGender().equalsIgnoreCase("female"))
+            .count();
+    System.out.println(countFemale);
 
   }
 
