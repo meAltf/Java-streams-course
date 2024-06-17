@@ -16,6 +16,14 @@ public class Lecture8 {
 
   @Test
   public void simpleGrouping() throws Exception {
+    Map<String, List<Car>> groupingValue = MockData.getCars()
+            .stream()
+            .collect(Collectors.groupingBy(Car::getMake));
+
+    groupingValue.forEach((make, cars) -> {
+      System.out.println(make);
+      cars.forEach(System.out::println);
+    });
 
   }
 
