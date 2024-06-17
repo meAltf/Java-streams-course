@@ -66,7 +66,7 @@ public class Lecture5 {
 
   @Test
   public void test() throws Exception {
-
+      MockData.getCars().forEach(System.out::println);
   }
 }
 
