@@ -12,6 +12,12 @@ public class Lecture11 {
   public void joiningStrings() throws Exception {
     List<String> names = ImmutableList.of("anna", "john", "marcos", "helena", "yasmin");
 
+    String join = "";
+    for(String name : names){
+      join += name +" , ";
+    }
+    System.out.println(join.substring(0, join.length()-2));
+
   }
 
   @Test
