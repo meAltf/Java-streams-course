@@ -1,5 +1,8 @@
 package beans;
 
+/**
+ * Person updated
+ */
 public class Person {
 
   final Integer id;

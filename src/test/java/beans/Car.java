@@ -1,5 +1,8 @@
 package beans;
 
+/**
+ * car updated
+ */
 public class Car {
 
   private final Integer id;

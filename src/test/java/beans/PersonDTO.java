@@ -1,5 +1,8 @@
 package beans;
 
+/**
+ * PersonDTO also need to be updated
+ */
 public class PersonDTO {
 
   private final Integer id;
