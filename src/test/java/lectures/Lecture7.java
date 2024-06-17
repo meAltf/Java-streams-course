@@ -26,12 +26,26 @@ public class Lecture7 {
 
   @Test
   public void min() throws Exception {
+    double minPriceYellow = MockData.getCars()
+            .stream()
+            .filter(car -> car.getColor().equalsIgnoreCase("yellow"))
+            .mapToDouble(Car::getPrice)
+            .min()
+            .orElse(0);
+    //.getAsDouble();
+    System.out.println(minPriceYellow);
 
   }
 
   @Test
   public void max() throws Exception {
-
+    double maxPriceYellow = MockData.getCars()
+            .stream()
+            .filter(car -> car.getColor().equalsIgnoreCase("yellow"))
+            .mapToDouble(Car::getPrice)
+            .max()
+            .getAsDouble();
+    System.out.println(maxPriceYellow);
   }
 
 
