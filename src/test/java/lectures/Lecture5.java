@@ -34,10 +34,10 @@ public class Lecture5 {
     // transform from one data type to another
     List<Person> people = MockData.getPeople();
     List<PersonDTO> personDtos = people.stream()
-            .map(person -> {
-              PersonDTO personDto = new PersonDTO(person.getId(), person.getFirstName(), person.getAge());
-              return personDto;
-            })
+//            .map(person -> {
+//              PersonDTO personDto = new PersonDTO(person.getId(), person.getFirstName(), person.getAge());
+//              return personDto;
+            .map(person -> new PersonDTO(person.getId(), person.getFirstName(), person.getAge()))
             .collect(Collectors.toList());
 
     personDtos.forEach(System.out::println);
