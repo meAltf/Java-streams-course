@@ -52,17 +52,22 @@ public class Lecture7 {
   @Test
   public void average() throws Exception {
     List<Car> cars = MockData.getCars();
+    double averagePrice = cars.stream()
+            .mapToDouble(Car::getPrice)
+            .average()
+            .orElse(0);
+    System.out.println(averagePrice);
 
   }
 
   @Test
   public void sum() throws Exception {
     List<Car> cars = MockData.getCars();
-    double sum = cars.stream()
+    double sumCars = cars.stream()
         .mapToDouble(Car::getPrice)
         .sum();
-    BigDecimal bigDecimalSum = BigDecimal.valueOf(sum);
-    System.out.println(sum);
+    BigDecimal bigDecimalSum = BigDecimal.valueOf(sumCars);
+    System.out.println(sumCars);
     System.out.println(bigDecimalSum);
 
   }
