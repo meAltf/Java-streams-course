@@ -24,5 +24,13 @@ public class Lecture11 {
   public void joiningStringsWithStream() throws Exception {
     List<String> names = ImmutableList.of("anna", "john", "marcos", "helena", "yasmin");
 
+    String join = names.stream().collect(Collectors.joining(", "));
+    System.out.println("first  " + join);
+
+    String join2 = names.stream()
+            .map(String::toUpperCase)
+            .collect(Collectors.joining(" | "));
+    System.out.println("second  " + join2);
+
   }
 }
