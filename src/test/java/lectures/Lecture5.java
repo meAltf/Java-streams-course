@@ -54,6 +54,13 @@ public class Lecture5 {
   @Test
   public void averageCarPrice() throws Exception {
     // calculate average of car prices
+    ImmutableList<Car> cars = MockData.getCars();
+    double averagePrice = cars.stream()
+            //.mapToDouble(car -> car.getPrice())
+            .mapToDouble(Car::getPrice)
+            .average()
+            .orElse(0);
+    System.out.println(averagePrice);
 
   }
 
