@@ -22,7 +22,7 @@ public class Lecture13 {
               System.out.println("mapping price " + price);
               return price + (price * .14);
             })
-            .collect(Collectors.toList())
+            .collect(Collectors.toList()) // stream are lazy, means the method or other things only invoked when this .collect method called..
     );
   }
 }
