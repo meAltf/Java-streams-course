@@ -72,6 +72,10 @@ public class Lecture7 {
 
   }
 
+  /**
+   * use .summaryStatistics() to get all the value related to this
+   * @throws Exception
+   */
   @Test
   public void statistics() throws Exception {
     List<Car> cars = MockData.getCars();
