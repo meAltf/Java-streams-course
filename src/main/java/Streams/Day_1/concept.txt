@@ -1,0 +1,25 @@
+🗓️ Day 1: Introduction to Java 8 & Functional Programming Basics
+
+*Major addition in Java-8
+- Lambda Expression | function like blocks of code
+- Functional Interface | interfaces with a single abstract method
+- Stream API | process collections using a pipeline
+- Default & Static methods in interfaces
+- Optional class | avoid null pointer exception
+
+* Functional programming | FP
+- It's a style where we-  treat functions as first-class citizens | use pure functions and immutable data
+- In Java-8, we simulate FP using lambda expression, functional interface and stream API's
+
+* Lambda Expression
+- It is a shorter way to write a anonymous function/method that can be passed as an argument or stored in a variable.
+- (param1, param2) -> expression | (param1, param2) -> { expression }
+- Improved code readability and less boilerplate code
+- It is a type of functional interface
+
+* Interview Q&A:
+1. Can lambdas replace all anonymous classes?
+- No, Only those implementing functional interface(one abstract method).
+
+NOTE:
+- Lambda can access variable from outer scope only "final" variables.
