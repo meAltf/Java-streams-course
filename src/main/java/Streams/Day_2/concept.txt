@@ -1,0 +1,27 @@
+🗓️ Day 2: Functional Interfaces in Java 8
+
+* Functional Interface:
+- It is an interface with exactly one abstract method.
+- But it can have multiple default/static methods.
+- So, this enables it to be implemented using a lambda expression.
+- Mark it with "@FunctionalInterface" (optional but recommended)
+
+* Common built-in functional interfaces:
+- Predicate<T>   | Returns true or false            | boolean test(T t)
+- Function<T, R> | Convert T to R                   | R apply(T t)
+- Consumer<T>    | Consumes input, return nothing   | void accept(T t)
+- Supplier<T>    | Supplies result without input    | T get()
+
+* Interview Q&A:
+1. Why is @FunctionalInterface annotation used?
+- It is used to ensure that this interface has only one abstract method, otherwise compiler throw errors.
+
+2. How do built-in interfaces differ?
+- Predicate : return boolean                  | Conditional checking
+- Function  : maps input to output            | Transform data
+- Consumer  : perform action without return   | print/log/store
+- Supplier  : returns a result with no input  | Generate values
+
+
+NOTE :
+1. We can't use Lambdas without a functional interface, it should, must implement functional interface.
