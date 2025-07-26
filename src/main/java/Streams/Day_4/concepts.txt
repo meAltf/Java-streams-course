@@ -1,0 +1,24 @@
+🗓️ Day 4: Advanced Stream Features
+
+* map() vs flatMap()
+- map() : Transform elements one by one
+- flatMap() : Flattens nested structures | List<List<String> to List<String>
+
+* Using Optional – Avoid NullPointerExceptions
+- To represent a value that may or may not be present, It's a better alternative to returning or checking null.
+- Optional.of("robert") : Optional from string
+- Optional.ofNullable(null) : Avoiding nulls
+
+* Grouping & Partitioning
+- groupingBy() : Group elements by a property or key
+- PartitioningBy() : Split into two groups based on boolean condition(true/false)
+
+* Parallel stream()
+- Used for large datasets where parallel processing improves performance.
+
+* Interview Q&A:
+1. xWhat is Optional in Java 8?
+- A container object to represent the presence or absence of a value.
+
+2. When should you use Optional?
+- When a method may return null. It helps avoid null pointer exceptions.
