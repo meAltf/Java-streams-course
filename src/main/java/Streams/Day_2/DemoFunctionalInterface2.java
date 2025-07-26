@@ -1,5 +1,6 @@
 package Streams.Day_2;
 
+@FunctionalInterface
 interface MathOperation {
     int operate(int a, int b);
 }
