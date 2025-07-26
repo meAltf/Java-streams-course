@@ -1,0 +1,28 @@
+🗓️ Day 3: Mastering the Stream API in Java 8
+
+* Stream API:
+- A stream is a sequence of elements supporting functional-style operations for processing the data.
+- Streams :
+    - Don't store data -> They operate on source data(like collections)
+    - Can be sequential or parallel
+    - Use pipelines (source -> intermediate operations -> terminal operations)
+
+* Stream operation types :
+- Intermediate | Return another stream     | map, filter, sorted, distinct, limit
+- Terminal     | Ends the stream pipelines | forEach, collect, reduce, count, anyMatch
+
+* Interview Q&A:
+1. Difference between map() and flatMap()?
+- map() - transform each element
+- flatMap() - flattens nested structures (e.g., List<List<T>> to List<T>)
+
+2. Is Stream lazy?
+- Yes, Intermediate operations are lazy, because nothing runs until a terminal operation is called
+
+3. Can we reuse a stream?
+- No, because once terminal operation used means stream consumed so after that stream can be re-used.
+
+4. Collections vs Streams
+- Collections | store the data | Eager in nature | can be modified
+- Streams | doesn't store data | Lazy in nature(due to intermediate operations) | can't be modified
+
