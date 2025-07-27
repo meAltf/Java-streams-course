@@ -1,0 +1,23 @@
+🗓️ Day 5: Comparisons & Final Prep
+
+* Interview Q&A :
+1. Can a functional interface have multiple methods?
+- No, functional interface has only one abstract method,
+- but it can have multiple default or static methods.
+
+2. Why are streams lazy?
+- Intermediate operations like map(), filter() are not executed until a terminal operation like collect(), forEach() is called.
+
+3. How do lambdas improve performance?
+- They improve readability and allow internal iteration,
+- making code more concise and parallelizable.
+
+* Final Recap
+
+| Feature              | Description                        | Usage                            |
+| -------------------- | ---------------------------------- | -------------------------------- |
+| Lambdas              | Anonymous functions                | `(a, b) -> a + b`                |
+| Functional Interface | One-method interfaces              | `Predicate<T>`, `Function<T, R>` |
+| Streams              | Declarative data processing        | `filter`, `map`, `collect`       |
+| Optional             | Null-safe container                | `Optional.ofNullable()`          |
+| Advanced Stream Ops  | Grouping, partitioning, flattening | `groupingBy`, `flatMap`          |
