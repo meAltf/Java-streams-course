@@ -15,7 +15,7 @@ public class PracticeCode {
                 Arrays.asList(5,6,7,8)
         );
         List<Integer> flattenList = listsList.stream()
-                .flatMap(Collection::stream) // Collections::stream
+                .flatMap(Collection::stream) // Collection::stream
                 .collect(Collectors.toList());
         System.out.println(flattenList);
     }

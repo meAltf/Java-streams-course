@@ -22,7 +22,7 @@ public class DemoMapFlatMap {
                 Arrays.asList("C", "D")
         );
         List<String> flatMapped = data.stream()
-                .flatMap(Collections -> Collections.stream()) // Collections::stream
+                .flatMap(Collections -> Collections.stream()) // Collection::stream
                 .collect(Collectors.toList());
         System.out.println(flatMapped);
     }
