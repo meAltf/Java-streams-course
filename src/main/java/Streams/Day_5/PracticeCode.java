@@ -67,5 +67,16 @@ public class PracticeCode {
                 .max(Comparator.comparingDouble(Employee::getSalary));
         System.out.println(topEmp);
 
+
+        // From a list of integers, find the second highest
+        List<Integer> numList = Arrays.asList(1, 2, 3, 4, 5, 6, 7);
+        Optional<Integer> secondMax = numList.stream()
+                .sorted(Comparator.reverseOrder())
+                .distinct()
+                .skip(1)
+                .findFirst();
+        System.out.println(secondMax);
+
+
     }
 }
